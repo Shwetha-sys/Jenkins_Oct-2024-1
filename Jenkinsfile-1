@@ -1,0 +1,3 @@
+Hostname="(hostname)"
+echo" the name of this machine is $Hostname"
+
