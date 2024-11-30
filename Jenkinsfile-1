@@ -1,3 +1,16 @@
-Hostname="(hostname)"
-echo" the name of this machine is $Hostname"
+pipeline {
+    agent any
+    tools {
+  maven 'Maven'
+}
+    stages{
+        stage('Build'){
+            steps{
+              sh script: 'mvn clean package'  
+            }
+        }
+   }
+    
+}
+
 
